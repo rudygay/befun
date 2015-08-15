@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/offback">
+    <RelativeLayout
+        android:id="@+id/off_bar"
+  		android:layout_width="fill_parent"
+  		android:layout_height="40dp"
+  		android:background="@drawable/title_bar"
+  		android:gravity="center_vertical"> 
+  		<Button
+            android:id="@+id/btn_back_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="off_back"
+            android:background="@drawable/btn_backd"
+		    android:layout_marginLeft="7dp"
+		   />    
+      	<TextView
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:text="账号注销"
+        	android:layout_centerInParent="true"
+        	android:gravity="center"
+        	android:textSize="22sp"		
+			android:textColor="#ffffff"/>      
+	</RelativeLayout>
+	<RelativeLayout android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:gravity="center_horizontal"
+	    android:paddingTop="80dp"
+	    android:layout_below="@id/off_bar"
+	    android:id="@+id/off_img_name">
+      	<ImageView android:layout_height="wrap_content"
+      	    android:layout_width="wrap_content"
+      	    android:id="@+id/off_img"
+      	    android:src="@drawable/female_off"/>
+      	<LinearLayout android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:paddingLeft="10dp"
+      	    android:orientation="vertical"
+      	    android:layout_toRightOf="@id/off_img"
+      	    android:gravity="center_vertical"
+      	    android:paddingTop="25dp">
+      	    <TextView android:layout_height="wrap_content"
+      	        android:layout_width="wrap_content"
+      	        android:id="@+id/off_name"
+      	        android:text="秋天的鱼"
+      	        android:textColor="#333"
+      	        android:textSize="19sp"/>
+      	    <TextView android:layout_height="wrap_content"
+      	        android:layout_width="wrap_content"
+      	        android:id="@+id/off_id"
+      	        android:text="被窝ID：21212342"
+      	        android:textColor="#333"
+      	        android:paddingTop="5dp"/>"
+      	</LinearLayout>
+    </RelativeLayout>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/txt1"
+        android:layout_below="@id/off_img_name"
+        android:textColor="#333"
+        android:paddingTop="65dp"
+        android:textSize="13sp"
+        android:text="账号注销后，昵称和账号以及聊天信息将全部消失，"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/txt2"
+        android:layout_below="@id/txt1"
+        android:textColor="#333"
+        android:textSize="13sp"
+        android:text="账号将随机分配给其他人，您下次可以选择昵称产"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/txt3"
+        android:layout_below="@id/txt2"
+        android:textColor="#333"
+        android:text="生新的被窝ID。"
+        android:textSize="13sp"/>
+    <ImageButton android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:onClick="off"
+        android:src="@drawable/id_off_button"
+        android:layout_below="@id/txt3"
+        android:layout_centerInParent="true"
+        android:paddingTop="40dp"/>"
+</RelativeLayout>

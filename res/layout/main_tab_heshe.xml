@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical">
+        
+        <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical">  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="他/她"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" 				
+				/> 
+			    
+		 </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#FFE1FF"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edit_Text2"              
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#000" 
+                android:background="@drawable/search"
+                android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:inputType="number"
+				android:imeOptions="actionSearch"
+                 />                          
+        </LinearLayout>
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/search_layout"
+            android:gravity="center"
+            android:orientation="horizontal">
+			
+        </LinearLayout>
+ </LinearLayout>

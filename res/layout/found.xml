@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/found_layout"
+    android:background="#0000">
+    <LinearLayout android:paddingTop="88dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    	<ImageView android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:layout_gravity="center_horizontal"
+        	android:src="@drawable/female_big"
+        	android:id="@+id/found_img"/>
+    	<TextView android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:layout_gravity="center_horizontal"
+        	android:text="张三"
+        	android:id="@+id/found_txt"
+        	android:textColor="#111"
+        	android:textSize="20sp"
+        	android:paddingTop="18dp"/>
+    </LinearLayout>
+    <ImageButton android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/talk_add"
+        android:id="@+id/talkadd"
+        android:background="#0000"
+        android:paddingTop="35dp"/>
+    <ImageButton android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/talk_change"
+        android:id="@+id/talkchange"
+        android:background="#0000"
+        android:paddingTop="30dp"/>
+
+</LinearLayout>

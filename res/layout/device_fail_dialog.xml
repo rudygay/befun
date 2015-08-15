@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"     
+    android:layout_height="fill_parent"
+    android:background="#0000">
+<RelativeLayout
+    android:layout_width="290dp"
+    android:layout_height="164dp"
+    android:background="@drawable/device_f_back">
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_long_co"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fail_po"/>
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+	android:background="@drawable/btn_item">
+    <ImageView android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+        android:src="@drawable/mess_female"
+        android:layout_alignParentLeft="true"
+      	android:id="@+id/img_mess_id"
+      	android:layout_centerInParent="true"
+      	android:layout_marginLeft="11dp"/>
+    <TextView android:layout_height="wrap_content"
+      	android:layout_width="wrap_content"
+      	android:id="@+id/frien_name"
+      	android:text="秋天的鱼"
+      	android:textColor="#444"
+      	android:textSize="15sp"
+      	android:layout_toRightOf="@id/img_mess_id"
+      	android:layout_marginLeft="8dp"
+      	android:layout_marginTop="15dp"/>
+	<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        	     	
+        android:background="@drawable/delete_btn"
+        android:layout_alignParentRight="true"
+        android:id="@+id/mess_delete_id"
+        android:text="删除"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+	<com.befun.view.BadgeView
+	    android:id="@+id/badgeView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="9dp"
+	    android:layout_alignLeft="@+id/img_mess_id"
+	    android:layout_marginLeft="31dp"
+	    android:background="@drawable/message_dot"
+	    android:gravity="center"/>
+
+</RelativeLayout>

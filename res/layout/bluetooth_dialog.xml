@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"     
+    android:layout_height="fill_parent"
+    android:background="#0000">
+<RelativeLayout
+    android:layout_width="290dp"
+    android:layout_height="134dp"
+    android:background="@drawable/bluetooth_back">
+    <LinearLayout android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bluetooth_btn_bar">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_setting"
+            android:id="@+id/bluset"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vertical_line"/>
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cancel"
+            android:id="@+id/blucancle"/>
+    </LinearLayout>
+    <ImageView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@id/bluetooth_btn_bar"
+        android:src="@drawable/horizon_line"/>
+
+</RelativeLayout>
+</RelativeLayout>

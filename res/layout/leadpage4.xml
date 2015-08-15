@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@drawable/lead4" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+
+  <Button
+      android:layout_width="150dp"
+      android:layout_height="50dp"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="70dp"
+      android:text="开启应用"
+      android:textColor="#555"
+      android:textSize="20sp"
+      android:background="@drawable/btn_startapp"
+      android:onClick="startbutton"/>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/whiteback">
+        <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"
+  			android:id="@+id/more_bar_layout">  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="更多"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff"/> 			    
+		</RelativeLayout>
+		<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:id="@+id/more_setting_layout"
+            android:layout_below="@id/more_bar_layout"
+            android:padding="8dp">
+      		<ImageView android:layout_width="wrap_content"
+      		    android:layout_height="wrap_content"
+      		    android:src="@drawable/female_more"
+      		    android:layout_alignParentLeft="true"
+      		    android:id="@+id/img_more_id"/>
+           <LinearLayout android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:paddingLeft="10dp"
+      	    android:orientation="vertical"
+      	    android:layout_toRightOf="@id/img_more_id"
+      	    android:gravity="center_vertical"
+      	    android:layout_centerInParent="true">
+      	    <TextView android:layout_height="wrap_content"
+      	        android:layout_width="wrap_content"
+      	        android:id="@+id/off_name"
+      	        android:text="秋天的鱼"
+      	        android:textColor="#333"
+      	        android:textSize="18sp"/>
+      	    <TextView android:layout_height="wrap_content"
+      	        android:layout_width="wrap_content"
+      	        android:id="@+id/off_id"
+      	        android:text="被窝ID：21212342"
+      	        android:textColor="#666"
+      	        android:paddingTop="5dp"/>"
+      	</LinearLayout>
+      	<LinearLayout android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:orientation="vertical"
+      	    android:layout_alignParentRight="true">
+      	<Button
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"        	     	
+        	android:background="@drawable/btn_setting_more"
+        	android:onClick="more_setting"/>
+      	<TextView android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:text="设置"
+      	    android:textSize="12sp"
+      	    android:paddingTop="5dp"
+      	    android:layout_gravity="center_horizontal"/>
+      	</LinearLayout>
+            </RelativeLayout>
+                  					
+      	<ImageView
+      	    android:layout_width="match_parent"
+      	    android:layout_height="wrap_content"
+      	    android:paddingTop="0dp"
+      	    android:src="@drawable/divider"
+      	    android:id="@+id/divider_more"
+      	    android:layout_below="@id/more_setting_layout" />
+      		     
+ </RelativeLayout>

@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/whiteback"
+    android:orientation="vertical" >
+        
+        <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"
+  			android:id="@+id/message_bar_layout">  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="消息"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff"/> 		    
+		</RelativeLayout>
+		<ListView android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/message_bar_layout"
+		    android:id="@+id/message_list"
+
+		    android:divider="@drawable/divider"/>
+		<ImageView android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:layout_below="@id/message_list"
+		    android:src="@drawable/divider"/>"
+</RelativeLayout>
